@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Boilerplate with Husky, Tailwind, Prettier, and ESLint
+![Next.js Boilerplate](https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F6jgunckv1lxtwidq4qr8.png)
+
+This project serves as a boilerplate for starting a Next.js project with essential tools and configurations to ensure code quality and consistency. It includes the following plugins and configurations:
+
+- **Husky:** Git hooks made easy to enforce quality checks before committing code.
+- **Tailwind CSS:** A utility-first CSS framework for rapidly building custom designs.
+- **Prettier:** An opinionated code formatter that ensures consistent code style.
+- **ESLint:** A pluggable linting utility for JavaScript and TypeScript.
+
+## Features
+
+- **Commit Message Conventions:** Utilizes Commitlint and Commitizen for standardized commit messages.
+- **Linting Rules:**
+  - `eslint-config-airbnb`: A set of recommended ESLint rules based on the Airbnb JavaScript style guide.
+  - `eslint-config-airbnb-typescript`: Airbnb's ESLint configuration for TypeScript projects.
+  - `eslint-config-next`: ESLint configuration specifically tailored for Next.js projects.
+  - `eslint-config-prettier`: Disables ESLint rules that conflict with Prettier.
+  - Plugins such as `eslint-plugin-import`, `eslint-plugin-react`, `eslint-plugin-jsx-a11y`, and others ensure comprehensive linting.
+- **Git Hooks:** Husky is used to set up Git hooks, enabling pre-commit checks for linting and formatting.
+- **Tailwind CSS Integration:** Tailwind CSS is included and ready to use for styling your Next.js application.
 
 ## Getting Started
 
-First, run the development server:
+1. Clone this repository to your local machine:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Begin building your Next.js application with the configured tools and plugins.
 
-## Learn More
+# Scripts
+- `dev`: Start the Next.js development server.
+- `build`: Build the Next.js application for production.
+- `start`: Start the production server.
+- `lint`: Lint all JavaScript and TypeScript files.
+- `lint:fix`: Automatically fix linting issues where possible.
+- `format`: Format all JavaScript and TypeScript files using Prettier.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# Contributing
+If you have suggestions, enhancements, or issues, feel free to open an issue or submit a pull request. Contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# License
+This project is licensed under the MIT License - see the LICENSE file for details.
